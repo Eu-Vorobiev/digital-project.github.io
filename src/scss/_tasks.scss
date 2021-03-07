@@ -1,0 +1,36 @@
+.tasks {
+  &__wrap {
+    margin-bottom: 120px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+
+    &:first-child>.tasks__desc {
+      max-width: 280px;
+      margin-right: 180px;
+    }
+  }
+
+  &__number {
+    margin-right: 30px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 200px;
+    line-height: 100%;
+    color: #F2F2F2;
+  }
+
+  &__desc {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    color: $primary-color;
+    max-width: 420px;
+  }
+}

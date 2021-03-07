@@ -1,0 +1,93 @@
+.project {
+  &__wrap {
+    display: grid;
+    gap: 30px;
+
+    &-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    &-btm {
+      display: grid;
+      grid-template-columns: 270px 470px 370px;
+      gap: 30px;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &:hover >.project__desc {
+      display: block;
+      background-color: rgba(51,51,51,.8);
+    }
+  }
+
+
+  &__desc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+    transition: all .3s ease-in-out;
+    padding: 50px 70px 60px 70px;
+
+    &--md {
+      padding: 35px 50px;
+    }
+
+    &--sm {
+      padding: 65px 20px 100px 20px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+    color: $white;
+    text-transform: uppercase;
+
+    &--md {
+      font-size: 58px;
+      line-height: 100%;
+    }
+
+    &--sm {
+      font-size: 42px;
+      line-height: 100%;
+    }
+  }
+
+  &__link {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: $white;
+    opacity: 0.8;
+    transition: all .3s ease-in-out;
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  &__action {
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__btn {
+    margin-top: 30px;
+    @include imgAction($white);
+  }
+}

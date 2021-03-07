@@ -46,7 +46,22 @@ a {
 .logo {
   cursor: pointer;
   transition: all .3s ease-in-out;
-  &:hover, &:focus {
+
+  &:hover,
+  &:focus {
     opacity: 0.7;
+  }
+}
+
+.section__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+  color: $secondary-color;
+  margin: 0;
+  margin-bottom: 60px;
+  &--sm {
+    margin-bottom: 20px;
   }
 }

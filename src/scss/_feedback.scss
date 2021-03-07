@@ -1,0 +1,15 @@
+.feedback {
+  &__wrap {
+    margin-bottom: 120px;
+    display: flex;
+    align-items: center;
+  }
+  &__photo {
+    max-width: 750px;
+  }
+  &__btn {
+    display: inline-flex;
+    justify-self: flex-start;
+    @include imgAction($white);
+  }
+}

@@ -1,11 +1,187 @@
 @@include("parts/_head.html",
 {
-  "title": "Главная"
+"title": "Главная"
 })
 @@include("parts/_header.html")
 
 <main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__wrap">
+        <div class="hero__content">
+          <h1 class="hero__title"><span class="hero__title--light">Project</span><br>Nurtown</h1>
+        </div>
+        <div class="hero__product">
+          <!-- Slider -->
+          <div class="hero__slider slider">
+            <div>
+              <div class="slider__item">
+                <a class="btn hero__btn" href="#">Взглянуть
+                  <img class="arrow-right-black " src="img/arrow-right-black.svg" alt="Arrow right">
+                </a>
+                <img class="hero__img" src="img/hero-img.png" alt="Project Nurtown">
+              </div>
+            </div>
+            <div>
+              <div class="slider__item">
+                <a class="btn hero__btn" href="#">Взглянуть
+                  <img class="arrow-right-black " src="img/arrow-right-black.svg" alt="Arrow right">
+                </a>
+                <img class="hero__img" src="img/hero-img.png" alt="Project Nurtown">
+              </div>
+            </div>
+          </div>
+          <div class="slider__btns">
+            <button class="slick-prev slick-arrow">Prev</button>
+            <button class="slick-next slick-arrow">Next</button>
+          </div>
+          <!-- ./ Slider -->
+        </div>
+      </div>
+    </div>
+  </section> <!-- ./ Hero -->
 
+  <!-- About US -->
+  <section class="about-us">
+    <div class="container">
+      <div class="about-us__wrap">
+        <div class="about-us__products">
+          <img class="about-us__img about-us__img--big" src="img/big-tower.png" alt="Project 2">
+          <img class="about-us__img about-us__img--md" src="img/medium-tower.png" alt="Project 1">
+          <img class="about-us__img about-us__img--sm" src="img/sm-tower.png" alt="Project 3">
+        </div>
+        <div class="about-us__content">
+          <h2 class="about-us__title">О компании</h2>
+          <p class="about-us__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+            also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          <a class="btn btn--lg about-us__btn" href="#">Читать
+            <img class="arrow-right-black " src="img/arrow-right-black.svg" alt="Arrow right">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section> <!-- ./ About US-->
+
+  <!-- Tasks-->
+  <section class="tasks">
+    <div class="container">
+      <h2 class="section__title">Основные задачи</h2>
+      <div class="tasks__wrap">
+        <div class="tasks__item">
+          <span class="tasks__number">1</span>
+          <p class="tasks__desc">Создание комфортных условий и повышение качества обслуживания клиентов</p>
+        </div>
+        <div class="tasks__item">
+          <span class="tasks__number">2</span>
+          <p class="tasks__desc">Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала,
+            закупки нового оборудования и усиленной рекламы на рынке</p>
+        </div>
+      </div>
+    </div>
+  </section> <!-- ./ Tasks-->
+
+  <!-- Projects -->
+  <section class="project">
+    <div class="container">
+      <h2 class="section__title">Наши проекты</h2>
+      <!-- Projects Wrap -->
+      <div class="project__wrap">
+        <div class="project__wrap-top">
+          <div class="project__item">
+            <img class="project__img" src="img/project1.png" alt="Работа 1">
+            <div class="project__desc">
+              <h3 class="project__title">Досуговый центр</h3>
+              <a class="project__link" href="#">Подробнее
+                <img class="arrow-right-white" src="img/arrow-right-white.svg" alt="Arrow white">
+              </a>
+            </div>
+          </div>
+          <div class="project__item">
+            <img class="project__img" src="img/project2.png" alt="Работа 2">
+            <div class="project__desc">
+              <h3 class="project__title">Арт-галерея</h3>
+              <a class="project__link" href="#">Подробнее
+                <img class="arrow-right-white" src="img/arrow-right-white.svg" alt="Arrow white">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project__wrap-btm">
+          <div class="project__item">
+            <img class="project__img" src="img/project3.png" alt="Работа 3">
+            <div class="project__desc project__desc--sm">
+              <h3 class="project__title project__title--sm">Стадион</h3>
+              <a class="project__link" href="#">Подробнее
+                <img class="arrow-right-white" src="img/arrow-right-white.svg" alt="Arrow white">
+              </a>
+            </div>
+          </div>
+          <div class="project__item">
+            <img class="project__img" src="img/project4.png" alt="Работа 4">
+            <div class="project__desc project__desc--md">
+              <h3 class="project__title project__title--md">Жилой комплекс</h3>
+              <a class="project__link" href="#">Подробнее
+                <img class="arrow-right-white" src="img/arrow-right-white.svg" alt="Arrow white">
+              </a>
+            </div>
+          </div>
+          <div class="project__item">
+            <img class="project__img" src="img/project5.png" alt="Работа 5">
+            <div class="project__desc project__desc--sm">
+              <h3 class="project__title project__title--sm">Фонтан</h3>
+              <a class="project__link" href="#">Подробнее
+                <img class="arrow-right-white" src="img/arrow-right-white.svg" alt="Arrow white">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- ./ Projects Wrap-->
+      <div class="project__action">
+        <a class="btn btn--black btn-sm project__btn" href="projects.html">Все проекты
+          <img class="arrow-right-white" src="img/arrow-right-white.svg" alt="Arrow white">
+        </a>
+      </div>
+    </div>
+  </section> <!-- ./ Projects -->
+
+  <!-- Feedback -->
+  <section class="feedback">
+    <div class="container">
+      <h2 class="section__title section__title--sm">Связаться с нами</h2>
+      <div class="feedback__wrap">
+        <form class="form feedback__form" action="#" method="POST">
+          <label for="name">
+            <input class="form__input" type="text" placeholder="Имя" name="name" minlength="2" maxlength="20" title="Введите Ваше имя" required>
+          </label>
+          <label for="phone">
+            <input class="form__input" type="tel" placeholder="Номер телефона*" name="phone" minlength="10" maxlength="10" pattern="" title="Только цифры в формате 0996668877" required>
+          </label>
+          <label for="email">
+            <input class="form__input" type="email" placeholder="E-mail*" name="email" required>
+          </label>
+          <label for="service">
+            <input class="form__input" type="text" name="service" placeholder="Интересующий товар/услуга">
+          </label>
+          <label for="message">
+            <textarea class="form__input form__message" name="message" id="message" placeholder="Сообщение*" required></textarea>
+          </label>
+          <label for="check">
+            <input class="form__check" type="checkbox" name="check" id="check">Отправляя заявку Вы соглашаетесь
+            с политикой конфиденциальности
+          </label>
+          <button class="btn btn--black feedback__btn">Отправить
+            <img class="arrow-right-white" src="img/arrow-right-white.svg" alt="Arrow white">
+          </button>
+        </form>
+        <div class="feedback__photo">
+          <img class="feedback__img" src="img/man-phone.png" alt="Связаться с нами">
+        </div>
+      </div>
+    </div>
+  </section> <!-- ./ Feedback-->
 </main>
 
 @@include("parts/_footer.html")

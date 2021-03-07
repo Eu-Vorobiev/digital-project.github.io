@@ -1,0 +1,13 @@
+@mixin imgAction ($borderColor) {
+  border: 1px solid transparent;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    transform: translateX(10px);
+  }
+
+  &:focus {
+    transform: translateX(10px);
+    border: 1px solid $borderColor;
+  }
+}

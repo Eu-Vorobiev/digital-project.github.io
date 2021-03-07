@@ -1,0 +1,25 @@
+.btn, button {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  padding: 30px 50px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: $primary-color;
+  background-color: $white;
+  &--black {
+    color: $white;
+    background-color: $primary-color;
+  }
+  &--sm {
+    padding: 30px 40px;
+  }
+  &--lg {
+    padding: 30px 60px;
+  }
+}

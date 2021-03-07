@@ -1,0 +1,51 @@
+.form {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 3fr 1fr 70px;
+  gap: 10px;
+
+  &__input {
+    width: 100%;
+    max-width: 390px;
+    padding: 15px 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.04em;
+    color: $lightBlack;
+    background-color: #f3f3f3;
+    border: 1px solid transparent;
+    outline: none;
+    transition: all .3s ease-in-out;
+
+    &:focus,
+    &:hover {
+      border: 1px solid darken($secondary-color, 10%);
+      background-color: darken($white, 10%);
+    }
+
+    &::placeholder {
+      color: $secondary-color;
+    }
+  }
+
+  &__check {
+    margin-left: 26px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: $primary-color;
+  }
+
+  &__message {
+    height: 150px;
+    resize: none;
+  }
+}
+
+
+/* прячем input checkbox */
+input[type="checkbox"] {
+  display: none;
+}

@@ -1,0 +1,18 @@
+.arrow-right-black, 
+.arrow-right-white {
+  display: inline-block;
+  margin-left: 10px;
+  transform: all .3s ease-in-out;
+  animation: alwaysRight 2s ease-in-out infinite forwards;
+}
+
+@keyframes alwaysRight {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(15px);
+    opacity: 0;
+  }
+}
