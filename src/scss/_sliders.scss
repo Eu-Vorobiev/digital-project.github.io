@@ -8,12 +8,14 @@
   }
 }
 
-.slick-arrow {
+.hero__slider>.slick-next,
+.gallery__slider>.slick-next {
   font-size: 0;
   line-height: 0;
   position: absolute;
   content: " ";
   top: 600px;
+  left: -325px;
   display: block;
   width: 17px;
   height: 8px;
@@ -26,37 +28,87 @@
   border: 1px solid #f2f2f2;
   outline: none;
   background: $white;
+  background-image: url(../img/arrow-right-black.svg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
   transition: all .3s ease-in-out;
+  &::before {
+    content: "";
+  }
+  
+  &:hover,
+  &:focus {
+    background-color: #f2f2f2;
+  }
+
+  &::before {
+    content: "";
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #f2f2f2;
+  }
 }
 
-.slick-prev {
+.gallery__slider>.slick-next {
+  top: 650px;
+  left: 255px;
+}
+
+.hero__slider>.slick-prev,
+.gallery__slider>.slick-prev {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  content: " ";
+  top: 600px;
   left: -397px;
+  display: block;
+  width: 17px;
+  height: 8px;
+  padding: 24px;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: 1px solid #f2f2f2;
+  outline: none;
+  background: $white;
   background-image: url(../img/arrow-left.svg);
-
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  transition: all .3s ease-in-out;
   &::before {
     content: "";
   }
-
+  
   &:hover,
   &:focus {
     background-color: #f2f2f2;
   }
 }
-
-.slick-next {
-  background-image: url(../img/arrow-right-black.svg);
-  left: -325px;
-
-  &::before {
-    content: "";
+.gallery__slider>.slick-prev {
+  top: 650px;
+  left: 180px;
+}
+.gallery__slider {
+  margin-bottom: 200px!important;
+  >.slick-list {
+    max-width: 100%;
   }
 
-  &:hover,
-  &:focus {
-    background-color: #f2f2f2;
+  >.slick-track {
+    width: inherit;
+  }
+
+  > .slick-dots {
+    bottom: -80px;
+    left: -40px;
+    width: 20%;
   }
 }
 
@@ -76,9 +128,10 @@
   margin-bottom: 0px;
 }
 
-.slick-dots {
+.hero__slider>.slick-dots {
   bottom: 75px;
-  right: 690px;
+  left: -415px;
+  width: 20%;
 }
 
 .slick-dots li:first-child {
@@ -97,6 +150,9 @@
   height: 35px;
   margin: 0;
   margin-right: 70px;
+}
+.slick-dots li:last-child {
+  margin-right: 0;
 }
 
 .slick-dots li button {

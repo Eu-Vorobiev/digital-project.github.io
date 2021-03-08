@@ -53,6 +53,22 @@ a {
   }
 }
 
+.main__title {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: $primary-color;
+
+  &--light {
+    font-weight: 300;
+    color: $secondary-color;
+  }
+  &--m {
+    margin: 60px 0px;
+  }
+}
+
 .section__title {
   font-style: normal;
   font-weight: 300;
@@ -61,6 +77,7 @@ a {
   color: $secondary-color;
   margin: 0;
   margin-bottom: 60px;
+
   &--sm {
     margin-bottom: 20px;
   }

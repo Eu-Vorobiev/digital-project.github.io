@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -9,7 +9,7 @@
   <meta name="google" content="notranslate">
   <meta name="format-detection" content="telephone=no">
   <meta name="description" content="Digital Project Agency. Main page">
-  <title>Главная</title>
+  <title>Digital Project</title>
   <link rel="stylesheet" href="fonts/TTHoves/stylesheet.css">
   <!-- Fonts -->
   <link rel="stylesheet" href="slick/slick.css">
@@ -31,10 +31,10 @@
         <nav class="nav header__nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#" >Главная</a>
+              <a class="nav__link" href="index.html" >Главная</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#" >Галерея</a>
+              <a class="nav__link" href="gallery.html" >Галерея</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#" >Проекты</a>
@@ -57,7 +57,7 @@
     <div class="container">
       <div class="hero__wrap">
         <div class="hero__content">
-          <h1 class="hero__title"><span class="hero__title--light">Project</span><br>Nurtown</h1>
+          <h1 class="main__title"><span class="main__title--light">Project</span><br>Nurtown</h1>
         </div>
         <div class="hero__product">
           <!-- Slider -->
@@ -78,10 +78,6 @@
                 <img class="hero__img" src="img/hero-img.png" alt="Project Nurtown">
               </div>
             </div>
-          </div>
-          <div class="slider__btns">
-            <button class="slick-prev slick-arrow">Prev</button>
-            <button class="slick-next slick-arrow">Next</button>
           </div>
           <!-- ./ Slider -->
         </div>
@@ -198,35 +194,38 @@
   <section class="feedback">
     <div class="container">
       <h2 class="section__title section__title--sm">Связаться с нами</h2>
+      <!-- Feedback Wrap -->
       <div class="feedback__wrap">
+        <!-- Feedback Form -->
         <form class="form feedback__form" action="#" method="POST">
           <label for="name">
             <input class="form__input" type="text" placeholder="Имя" name="name" minlength="2" maxlength="20" title="Введите Ваше имя" required>
           </label>
           <label for="phone">
-            <input class="form__input" type="tel" placeholder="Номер телефона*" name="phone" minlength="10" maxlength="10" pattern="" title="Только цифры в формате 0996668877" required>
+            <input class="form__input" type="tel" placeholder="Номер телефона*" name="phone" minlength="10" maxlength="10" pattern="\d([0-9]{10})" title="Ваш номер телефона. Только цифры. Используйте формат: 0995557722" required>
           </label>
           <label for="email">
-            <input class="form__input" type="email" placeholder="E-mail*" name="email" required>
+            <input class="form__input" type="email" placeholder="E-mail*" name="email" title="Введите Ваш Email" required>
           </label>
           <label for="service">
-            <input class="form__input" type="text" name="service" placeholder="Интересующий товар/услуга">
+            <input class="form__input" type="text" name="service" title="Введите интересующую Вас услугу либо товар" placeholder="Интересующий товар/услуга">
           </label>
           <label for="message">
-            <textarea class="form__input form__message" name="message" id="message" placeholder="Сообщение*" required></textarea>
+            <textarea class="form__input form__message" name="message" id="message" placeholder="Сообщение*" title="Напишите Ваши пожелания о будующем товаре/услуге" required></textarea>
           </label>
-          <label for="check">
-            <input class="form__check" type="checkbox" name="check" id="check">Отправляя заявку Вы соглашаетесь
+          <label class="form__label--check" for="check">
+            <input class="form__check" type="checkbox" name="check" id="check">Отправляя заявку, Вы соглашаетесь
             с политикой конфиденциальности
+            <span class="form__custom-check"></span>
           </label>
-          <button class="btn btn--black feedback__btn">Отправить
+          <button class="btn btn--black feedback__btn" type="submit">Отправить
             <img class="arrow-right-white" src="img/arrow-right-white.svg" alt="Arrow white">
           </button>
-        </form>
+        </form>  <!-- ./Feedback Form -->
         <div class="feedback__photo">
           <img class="feedback__img" src="img/man-phone.png" alt="Связаться с нами">
         </div>
-      </div>
+      </div> <!-- ./ Feedback Wrap -->
     </div>
   </section> <!-- ./ Feedback-->
 </main>
@@ -243,10 +242,10 @@
         <h3 class="nav__title">Информация</h3>
         <ul class="nav__list nav__list--footer">
           <li class="nav__item nav__item--footer">
-            <a class="nav__link nav__link--footer" href="#">Главная</a>
+            <a class="nav__link nav__link--footer" href="index.html">Главная</a>
           </li>
           <li class="nav__item nav__item--footer">
-            <a class="nav__link nav__link--footer" href="#">Галерея</a>
+            <a class="nav__link nav__link--footer" href="gallery.html">Галерея</a>
           </li>
           <li class="nav__item nav__item--footer">
             <a class="nav__link nav__link--footer" href="#">Проекты</a>

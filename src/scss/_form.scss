@@ -5,7 +5,7 @@
 
   &__input {
     width: 100%;
-    max-width: 390px;
+    max-width: 410px;
     padding: 15px 20px;
     font-weight: normal;
     font-size: 14px;
@@ -28,7 +28,15 @@
     }
   }
 
+  &__label {
+    &--check {
+      position: relative;
+      padding-left: 30px;
+    }
+  }
+
   &__check {
+    padding-left: 40px;
     margin-left: 26px;
     font-style: normal;
     font-weight: normal;
@@ -36,16 +44,41 @@
     line-height: 17px;
     letter-spacing: 0.03em;
     color: $primary-color;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  &__check:checked+.form__custom-check {
+    background-image: url("../img/check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__custom-check {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $primary-color;
+
+    &:focus,
+    &:hover {
+      background-image: url("../img/check.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.5;
+    }
   }
 
   &__message {
     height: 150px;
     resize: none;
   }
-}
-
-
-/* прячем input checkbox */
-input[type="checkbox"] {
-  display: none;
 }

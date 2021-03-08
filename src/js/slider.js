@@ -9,4 +9,4 @@
 //     }
 //   }
 // ]
-});});
+});$(".gallery__slider").slick({arrows:true,dots:false});});

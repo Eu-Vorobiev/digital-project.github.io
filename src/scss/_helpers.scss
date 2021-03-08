@@ -1,4 +1,4 @@
-.arrow-right-black, 
+.arrow-right-black,
 .arrow-right-white {
   display: inline-block;
   margin-left: 10px;
@@ -11,8 +11,40 @@
     transform: translateX(0px);
     opacity: 1;
   }
+
   100% {
     transform: translateX(15px);
     opacity: 0;
+  }
+}
+
+.counter {
+  position: absolute;
+  bottom: -71px;
+  left: 17px;
+
+  &__num {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: $primary-color;
+    position: relative;
+    &:first-child {
+      margin-right: 90px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: -6px;
+        right: -69px;
+        width: 43px;
+        height: 43px;
+        background-image: url("../img/line.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    &:last-child {
+      color: $secondary-color;
+    }
   }
 }

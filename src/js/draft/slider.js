@@ -14,4 +14,9 @@ $(document).ready(function () {
     //   }
     // ]
   });
+  $(".gallery__slider").slick({
+    arrows: true,
+    dots: false,
+    fade: true
+  })
 });

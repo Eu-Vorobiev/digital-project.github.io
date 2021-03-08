@@ -12,22 +12,10 @@
     padding-bottom: 120px;
   }
 
-  &__title {
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 64px;
-    text-transform: uppercase;
-    color: $primary-color;
-
-    &--light {
-      font-weight: 300;
-      color: $secondary-color;
-    }
-  }
-
   &__slider {
     display: flex;
     align-items: center;
+
   }
 
   &__img {
@@ -48,7 +36,7 @@
     &:hover {
       transform: translateX(10px);
     }
-    
+
     &:focus {
       transform: translateX(10px);
       border: 1px solid $lightBlack;
