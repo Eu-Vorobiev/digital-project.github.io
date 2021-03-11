@@ -1,0 +1,13 @@
+.certification {
+  &__wrap {
+    margin-bottom: 120px;
+    position: relative;
+    .counter {
+      right: 180px;
+      left: unset;
+    }
+  }
+  &__slider {
+    position: relative;
+  }
+}

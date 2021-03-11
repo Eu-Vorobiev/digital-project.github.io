@@ -50,6 +50,6 @@
   }
 
   &__btn {
-    @include imgAction($lightBlack);
+    @include btnAction($lightBlack);
   }
 }

@@ -18,5 +18,14 @@ $(document).ready(function () {
     arrows: true,
     dots: false,
     fade: true
+  });
+  $(".certification__slider").slick({
+    dots: false,
+    arrows: true,
+    slidesToShow: 3
+  })
+  $(".projects__slider").slick({
+    dots: false,
+    arrows: true
   })
 });

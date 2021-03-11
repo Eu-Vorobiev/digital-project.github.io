@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  background-color: #FBFBFB;
+
+  &__photo {
+    width: 55%;
+  }
+
+  &__content {
+    width: 45%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 50px;
+    color: $secondary-color;
+  }
+
+  &__desc {
+    margin: 0;
+    flex-grow: 1;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    color: $primary-color;
+  }
+  &__btn {
+    align-self: flex-start;
+    @include btnAction($lightBlack);
+  }
+}

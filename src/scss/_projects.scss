@@ -1,0 +1,23 @@
+.projects {
+  &__wrap {
+    margin-bottom: 220px;
+    position: relative;
+    .counter {
+      left: 0;
+    }
+  }
+
+  &__title {
+    margin: 60px 0px 30px;
+  }
+
+  &__slider {
+    position: relative;
+    padding-top: 30px;
+    border-top: 1px solid $secondary-color;
+  }
+
+  &__card {
+    margin-bottom: 60px;
+  }
+}
