@@ -3,6 +3,10 @@
     display: grid;
     gap: 30px;
 
+    @media (max-width: 1229px) {
+      gap: 15px;
+    }
+
     &-top {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -22,6 +26,10 @@
     &:hover >.project__desc {
       display: block;
       background-color: rgba(51,51,51,.8);
+    }
+
+    @media (max-width: 1229px) {
+      width: 90%;
     }
   }
 

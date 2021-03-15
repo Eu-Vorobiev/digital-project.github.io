@@ -1,1 +1,2 @@
-"use strict";document.addEventListener("DOMContentLoaded",function(){});
+"use strict";document.addEventListener("DOMContentLoaded",function(){// Hamburger
+var a=document.querySelector(".hamburger");var b=document.querySelector(".nav-mobile");a.addEventListener("click",function(){this.classList.toggle("is-active");b.classList.toggle("show");document.body.classList.toggle("no-scroll");});});

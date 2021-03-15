@@ -18,8 +18,15 @@
   }
   &--sm {
     padding: 30px 40px;
+    @media (max-width: 575px) {
+      padding: 22px 32px;
+    }
   }
   &--lg {
     padding: 30px 60px;
+    @media (max-width:575px) {
+      padding: 22px 48px;
+    }
   }
+
 }

@@ -2,10 +2,23 @@
   &__wrap {
     margin-bottom: 120px;
     display: flex;
+    @media (max-width: 991px) {
+      position: relative;
+    }
+    @media (max-width:575px) {
+      margin-bottom: 60px;
+    }
   }
   &__photo {
     max-width: 750px;
     padding-top: 30px;
+    @media (max-width: 991px) {
+      position: absolute;
+      top: 50px;
+      right: 0;
+      z-index: -1;
+      padding-top: 0;
+    }
   }
   &__btn {
     display: inline-flex;

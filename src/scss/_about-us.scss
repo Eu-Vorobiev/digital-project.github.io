@@ -4,6 +4,16 @@
     margin-bottom: 150px;
     background-color: #FBFBFB;
     display: flex;
+    flex-wrap: wrap;
+    @media (max-width:1199px) {
+      justify-content: center;
+    }
+    @media (max-width: 669px) {
+      padding: 30px 50px 0px;
+    }
+    @media (max-width: 420px) {
+      padding: 30px 30px 0px;
+    }
   }
 
   &__products {
@@ -11,12 +21,22 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: minmax(auto 265px) minmax(auto 140px);
     gap: 30px;
+    @media (max-width:1199px) {
+      margin-bottom: 50px;
+    }
+    @media (max-width: 669px) {
+      grid-template-columns: 1fr;
+      gap: 15px 0;
+    }
   }
 
   &__img {
     &--md {
       grid-row: span 2;
       margin-top: 30px;
+    }
+    @media (max-width: 669px) {
+      margin-top: 0;
     }
 
     &--sm {
@@ -26,6 +46,9 @@
 
   &__content {
     margin-left: 30px;
+    @media (max-width:1199px) {
+      margin-left: 0;
+    }
   }
 
   &__title {
@@ -34,10 +57,16 @@
     font-style: normal;
     font-weight: 300;
     font-size: 64px;
-    line-height: 64px;
+    line-height: 100%;
     color: $secondary-color;
+    @media (max-width: 1199px) {
+      text-align: center;
+    }
+    @media (max-width: 575px) {
+      font-size: 55px;
+    }
   }
-
+  
   &__desc {
     margin: 0;
     margin-bottom: 20px;
@@ -47,9 +76,18 @@
     font-size: 16px;
     line-height: 25px;
     color: $primary-color;
+    @media (max-width: 1199px) {
+      max-width: 700px;
+    }
+    @media (max-width: 669px) {
+      text-align: justify;
+    }
   }
 
   &__btn {
     @include btnAction($lightBlack);
+    @media (max-width: 1199px) {
+      margin-bottom: 20px;
+    }
   }
 }
