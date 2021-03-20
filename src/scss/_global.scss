@@ -60,9 +60,18 @@ a {
 .main__title {
   font-weight: bold;
   font-size: 64px;
-  line-height: 64px;
+  line-height: 100%;
   text-transform: uppercase;
   color: $primary-color;
+
+  @media (max-width: 640px) {
+    font-size: 54px;
+  }
+  @media (max-width: 520px) {
+    font-size: 50px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
 
   &--light {
     font-weight: 300;
@@ -78,7 +87,7 @@ a {
   font-style: normal;
   font-weight: 300;
   font-size: 64px;
-  line-height: 64px;
+  line-height: 100%;
   color: $secondary-color;
   margin: 0;
   margin-bottom: 60px;
@@ -87,9 +96,17 @@ a {
     margin-bottom: 20px;
   }
 
-  @media (max-width: 575px) {
-    font-size: 55px;
-    line-height: 55px;
+  @media (max-width: 899px) {
     margin-bottom: 40px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 420px) {
+    font-size: 40px;
+    margin-bottom: 25px;
   }
 }

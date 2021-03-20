@@ -59,6 +59,7 @@
   top: 650px;
   left: 255px;
 }
+
 .projects__slider>.slick-next {
   top: unset;
   bottom: -110px;
@@ -173,10 +174,54 @@
 .hero__slider {
   >.slick-list {
     max-width: 800px;
+
+    @media (max-width: 1199px) {
+      max-width: 660px;
+    }
+
+    @media (max-width: 767px) {
+      max-width: 560px;
+    }
+
+    @media (max-width: 640px) {
+      max-width: 470px;
+    }
+
+    @media (max-width: 520px) {
+      max-width: 380px;
+    }
+
+    @media (max-width: 425px) {
+      max-width: 310px;
+    }
   }
 
   >.slick-track {
     width: inherit;
+  }
+
+  >.slick-prev,
+  >.slick-next {
+    @media (max-width: 1199px) {
+      top: 430px;
+    }
+
+    @media (max-width: 1100px) {
+      top: unset;
+      bottom: -100px;
+    }
+  }
+
+  >.slick-prev {
+    @media (max-width: 1100px) {
+      left: 0;
+    }
+  }
+
+  >.slick-next {
+    @media (max-width: 1100px) {
+      left: 70px;
+    }
   }
 }
 
@@ -192,6 +237,23 @@
   bottom: 75px;
   left: -415px;
   width: 20%;
+
+  @media (max-width: 1199px) {
+    width: 30%;
+  }
+
+  @media (max-width: 1100px) {
+    bottom: -67px;
+    left: 120px;
+  }
+
+  @media (max-width: 640px) {
+    left: 140px;
+  }
+
+  @media (max-width: 520px) {
+    width: 50%;
+  }
 }
 
 .slick-dots li:first-child {

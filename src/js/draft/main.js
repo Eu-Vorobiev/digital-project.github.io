@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Hamburger
-  const btnMenu = document.querySelector(".hamburger");
+  const btnMenu    = document.querySelector(".hamburger");
   const mobileMenu = document.querySelector(".nav-mobile");
 
   btnMenu.addEventListener("click", function() {

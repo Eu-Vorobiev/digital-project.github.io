@@ -77,7 +77,7 @@ function browserSync () {
     server: {
       baseDir: "src",
     },
-    browser: "chrome",
+    browser: "firefox",
     notify: false
   });
 };

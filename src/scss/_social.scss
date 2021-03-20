@@ -2,12 +2,7 @@
   &__list {
     display: flex;
     align-items: center;
-  }
-  &__item {
-    margin-right: 40px;
-    &:last-child {
-      margin-right: 80px;
-    }
+    justify-content: space-between;
   }
   &__link {
     transition: all .3s ease-in-out;
