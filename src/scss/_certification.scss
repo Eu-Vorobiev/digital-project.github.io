@@ -2,9 +2,23 @@
   &__wrap {
     margin-bottom: 120px;
     position: relative;
+    @media (max-width: 575px) {
+      margin-bottom: 90px;
+    }
+    @media (max-width: 376px) {
+      margin-bottom: 140px;
+    }
     .counter {
       right: 180px;
       left: unset;
+      @media (max-width: 575px) {
+        bottom: -51px;
+      }
+      @media (max-width: 376px) {
+        right: unset;
+        left: 15px;
+        bottom: -105px;
+      }
     }
   }
   &__slider {

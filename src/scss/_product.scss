@@ -1,10 +1,35 @@
 .product {
+  &__title {
+    @media (max-width: 576px) {
+      font-size: 45px;
+    }
+    @media (max-width: 420px) {
+      font-size: 35px;
+    }
+  }
   &__wrap {
     margin-bottom: 120px;
     display: grid;
     grid-template-columns: .6fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 30px;
+    @media (max-width: 991px) {
+      grid-template-rows: .5fr .5fr .5fr .5fr;
+      margin-bottom: 80px;
+    }
+    @media (max-width: 576px) {
+      grid-template-rows: .4fr .5fr .5fr .5fr;
+      gap: 20px 0px;
+    }
+    @media (max-width: 476px) {
+      grid-template-rows: .3fr .5fr .5fr .3fr;
+    }
+    @media (max-width: 420px) {
+      grid-template-rows: .2fr .5fr .5fr .2fr;
+    }
+    @media (max-width: 376px) {
+      grid-template-rows: 0.1fr 0.3fr 0.5fr 0.1fr;
+    }
   }
 
   &__banner {
@@ -14,7 +39,16 @@
 
     &--sm {
       grid-column: 1/2;
+      @media (max-width: 1024px) {
+        grid-column: span 2;
+        justify-self: center;
+      }
     }
+  }
+
+  &__img {
+    height: auto;
+    object-position: center;
   }
 
   &__content {
@@ -24,5 +58,26 @@
     font-size: 16px;
     line-height: 25px;
     color: $primary-color;
+    @media (max-width: 1180px) {
+      font-size: 15px;
+      line-height: 20px;
+    }
+    @media (max-width: 1024px) {
+      grid-column: span 2;
+      font-size: 18px;
+      line-height: 30px;
+    }
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    @media (max-width: 576px) {
+      font-size: 14px;
+      line-height: 21px;
+    }
+    @media (max-width: 376px) {
+      font-size: 13px;
+      line-height: 17px;
+    }
   }
 }

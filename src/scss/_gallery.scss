@@ -1,17 +1,32 @@
 .gallery {
   &__container {
     position: relative;
+    >.counter {
+      left: 27px;
+      @media (max-width: 376px) {
+        bottom: -131px;
+      }
+    }
   }
 
-  &__wrap {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 30px;
+  &__slider {
+    position: relative;
+    @media (max-width: 476px) {
+      padding-top: 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
   }
 
   &__photo {
     position: relative;
     margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &:hover>.gallery__desc {
       height: 50%;

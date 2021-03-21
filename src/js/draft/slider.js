@@ -2,30 +2,63 @@ $(document).ready(function () {
   $(".hero__slider").slick({
     arrows: true,
     dots: true,
-    // responsive: [
-    //   {
-    //     breakpoint: 930,
-    //     settings: {
-    //       centerMode: true,
-    //       centerPadding: '10px',
-    //       slidesToShow: 3,
-    //       slidesToScroll: 1
-    //     }
-    //   }
-    // ]
   });
   $(".gallery__slider").slick({
     arrows: true,
     dots: false,
-    fade: true
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    responsive: [{
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 4,
+        centerMode: true
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 887,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 476,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
   });
   $(".certification__slider").slick({
     dots: false,
     arrows: true,
-    slidesToShow: 3
-  })
+    slidesToShow: 3,
+    responsive: [{
+        breakpoint: 1040,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 710,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
   $(".projects__slider").slick({
     dots: false,
     arrows: true
-  })
+  });
 });
