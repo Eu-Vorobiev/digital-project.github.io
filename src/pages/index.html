@@ -152,19 +152,19 @@
         <!-- Feedback Form -->
         <form class="form feedback__form" action="#" method="POST">
           <label for="name">
-            <input class="form__input" type="text" placeholder="Имя" name="name" minlength="2" maxlength="20" title="Введите Ваше имя" required>
+            <input class="form__input" type="text" placeholder="Имя" name="name" minlength="2" maxlength="20" title="Введите Ваше имя" id="name" required>
           </label>
           <label for="phone">
-            <input class="form__input" type="tel" placeholder="Номер телефона*" name="phone" minlength="10" maxlength="10" pattern="\d([0-9]{10})" title="Ваш номер телефона. Только цифры. Используйте формат: 0995557722" required>
+            <input class="form__input" type="tel" placeholder="Номер телефона*" name="phone" minlength="10" maxlength="10" pattern="\d([0-9]{10})" title="Ваш номер телефона. Только цифры. Используйте формат: 0995557722" id="phone" required>
           </label>
           <label for="email">
-            <input class="form__input" type="email" placeholder="E-mail*" name="email" title="Введите Ваш Email" required>
+            <input class="form__input" type="email" placeholder="E-mail*" name="email" title="Введите Ваш Email" id="email" required>
           </label>
           <label for="service">
-            <input class="form__input" type="text" name="service" title="Введите интересующую Вас услугу либо товар" placeholder="Интересующий товар/услуга">
+            <input class="form__input" type="text" name="service" title="Введите интересующую Вас услугу либо товар" placeholder="Интересующий товар/услуга" id="service">
           </label>
           <label for="message">
-            <textarea class="form__input form__message" name="message" id="message" placeholder="Сообщение*" title="Напишите Ваши пожелания о будующем товаре/услуге" required></textarea>
+            <textarea class="form__input form__message" name="message" id="message" placeholder="Сообщение*" title="Напишите Ваши пожелания о будующем товаре/услуге" id="message" required></textarea>
           </label>
           <label class="form__label--check" for="check">
             <input class="form__check" type="checkbox" name="check" id="check">Отправляя заявку, Вы соглашаетесь

@@ -2,7 +2,7 @@
 .arrow-right-white {
   display: inline-block;
   margin-left: 10px;
-  transform: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
   animation: alwaysRight 2s ease-in-out infinite forwards;
 }
 

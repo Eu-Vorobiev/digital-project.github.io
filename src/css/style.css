@@ -201,9 +201,7 @@ a {
 .arrow-right-white {
   display: inline-block;
   margin-left: 10px;
-  -webkit-transform: all .3s ease-in-out;
-      -ms-transform: all .3s ease-in-out;
-          transform: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
   -webkit-animation: alwaysRight 2s ease-in-out infinite forwards;
           animation: alwaysRight 2s ease-in-out infinite forwards;
 }
@@ -1324,8 +1322,8 @@ a {
   display: grid;
   -ms-grid-columns: 1fr 30px 1fr;
   grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: minmax(auto 265px) 30px minmax(auto 140px);
-  grid-template-rows: minmax(auto 265px) minmax(auto 140px);
+  -ms-grid-rows: minmax(auto, 265px) 30px minmax(auto, 140px);
+  grid-template-rows: minmax(auto, 265px) minmax(auto, 140px);
   gap: 30px;
 }
 

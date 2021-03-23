@@ -19,7 +19,7 @@
   &__products {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(auto 265px) minmax(auto 140px);
+    grid-template-rows: minmax(auto, 265px) minmax(auto, 140px);
     gap: 30px;
     @media (max-width:1199px) {
       margin-bottom: 50px;
