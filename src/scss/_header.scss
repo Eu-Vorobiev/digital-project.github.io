@@ -1,10 +1,27 @@
 .header {
+  transition: all .3s ease-in-out;
+
+  &--fixed {
+    background-color: $white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    opacity: .9;
+
+    & .header__wrap {
+      padding: 10px 0px;
+    }
+  }
+
   &__wrap {
     padding: 30px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   &__nav {
     @media (max-width: 768px) {
       display: none;

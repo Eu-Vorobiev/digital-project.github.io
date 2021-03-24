@@ -8,7 +8,7 @@ $(document).ready(function () {
     dots: false,
     slidesToShow: 5,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 1500,
     responsive: [{
       breakpoint: 1199,
@@ -60,5 +60,13 @@ $(document).ready(function () {
   $(".projects__slider").slick({
     dots: false,
     arrows: true
+  });
+
+  // Slider Dots
+  let dot= $('li[role*="presentation"]').children("button");
+
+  $.each(dot, function (index, elem) {
+    $(this).html("0"+ (index+1));
+    dot.parent(":last-child").children("button").text("0"+dot.length);
   });
 });

@@ -8,4 +8,17 @@ document.addEventListener("DOMContentLoaded", function () {
     mobileMenu.classList.toggle("show");
     document.body.classList.toggle("no-scroll");
   });
+
+  // Fixed Header
+  const header = document.querySelector(".header");
+
+  function fixHeader() {
+    if (window.pageYOffset >= header.offsetHeight - 40) {
+      header.classList.add("header--fixed");
+    } else {
+      header.classList.remove("header--fixed");
+    };
+  };
+
+  window.addEventListener('scroll', fixHeader);
 });

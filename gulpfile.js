@@ -1,9 +1,11 @@
-const { src, dest, watch, parallel } = require("gulp");
-const scss                           = require("gulp-sass");
-const autoprefix                     = require("gulp-autoprefixer");
-const sync                           = require("browser-sync").create();
-const imagemin                       = require("gulp-imagemin");
-const fileIncluder                   = require("gulp-file-include");
+const { src, dest, watch, parallel, series } = require("gulp");
+const scss                                   = require("gulp-sass");
+const autoprefix                             = require("gulp-autoprefixer");
+const sync                                   = require("browser-sync").create();
+const imagemin                               = require("gulp-imagemin");
+const fileIncluder                           = require("gulp-file-include");
+const webpHtml                               = require("gulp-webp-html");
+const htmlMin                                = require("gulp-htmlmin");
 
 const fs = require("fs"); /* создание файлов через nodejs*/ 
 
@@ -110,28 +112,39 @@ exports.default = parallel(partsToHtml, convertStyles, watcher, browserSync)
 
 // BUILD
 function moveHtml () {
-  return("src/*.html")
+  return src("src/*.html")
+  .pipe(webpHtml())
+  .pipe(htmlMin({
+    collapseWhitespace: true,
+    removeComments: true
+  }))
   .pipe(dest("build"))
 }
 
 function moveStyles () {
-  return("src/css/*.css")
+  return src("src/css/*.css")
   .pipe(dest("build/css"))
 }
 
 function moveJS () {
-  return("src/js/*.js")
+  return src("src/js/*.js")
   .pipe(dest("build/js"))
 }
 
 function moveImg () {
-  return("src/img/*")
+  return src("src/img/*")
   .pipe(dest("build/img"))
 }
 
-exports.moveHtml   = moveHtml;
-exports.moveStyles = moveStyles;
-exports.moveJS     = moveJS;
-exports.moveImg    = moveImg;
+function moveFonts () {
+  return src("src/fonts/**/*")
+  .pipe(dest("build/fonts"))
+}
 
-// exports.build = series(moveHtml, moveStyles, moveJS, moveImg);
+exports.moveHtml     = moveHtml;
+exports.moveStyles   = moveStyles;
+exports.moveJS       = moveJS;
+exports.moveImg      = moveImg;
+exports.moveFonts    = moveFonts;
+
+// exports.build = series(moveHtml, moveStyles, moveJS, moveImg, moveFonts);
