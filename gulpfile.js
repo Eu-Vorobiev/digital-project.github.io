@@ -113,7 +113,7 @@ exports.default = parallel(partsToHtml, convertStyles, watcher, browserSync)
 // BUILD
 function moveHtml () {
   return src("src/*.html")
-  .pipe(webpHtml())
+  // .pipe(webpHtml())
   .pipe(htmlMin({
     collapseWhitespace: true,
     removeComments: true
@@ -147,4 +147,4 @@ exports.moveJS       = moveJS;
 exports.moveImg      = moveImg;
 exports.moveFonts    = moveFonts;
 
-// exports.build = series(moveHtml, moveStyles, moveJS, moveImg, moveFonts);
+exports.build = series(moveHtml, moveStyles, moveJS, moveImg, moveFonts);
